@@ -39,7 +39,8 @@
             // 
             // authorizeBtn
             // 
-            this.authorizeBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.authorizeBtn.BackColor = System.Drawing.Color.DarkRed;
+            this.authorizeBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.authorizeBtn.Location = new System.Drawing.Point(12, 590);
             this.authorizeBtn.Name = "authorizeBtn";
             this.authorizeBtn.Size = new System.Drawing.Size(107, 56);
@@ -62,7 +63,8 @@
             // postBtn
             // 
             this.postBtn.AccessibleRole = System.Windows.Forms.AccessibleRole.OutlineButton;
-            this.postBtn.BackColor = System.Drawing.SystemColors.Desktop;
+            this.postBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.postBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.postBtn.Location = new System.Drawing.Point(601, 590);
             this.postBtn.Name = "postBtn";
             this.postBtn.Size = new System.Drawing.Size(91, 56);
@@ -88,7 +90,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.WindowText;
+            this.button1.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.button1.Location = new System.Drawing.Point(12, 3);
             this.button1.Name = "button1";
