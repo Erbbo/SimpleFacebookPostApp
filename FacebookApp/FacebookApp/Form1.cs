@@ -52,8 +52,10 @@ namespace FacebookApp
                 post.message = richTxtBox.Text;
                 _client.AccessToken = _accessToken;
                 var result = (IDictionary<string, object>)_client.Get("/me?fields=id");
-                var feed = "/112333129189370/feed/";
+                var feed = "/" + result["id"] + "/feed/";
                 _client.Post(feed, post);
+                errorMessage.Text = "Success, you posted to " + feed;
+                webBrowser.Navigate("www.Facebook.com");
             }
             catch (Exception ex)
             {

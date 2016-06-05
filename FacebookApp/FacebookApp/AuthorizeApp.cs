@@ -28,12 +28,11 @@ namespace FacebookApp
         public void Authorize()
         {
             var auth = new AuthorizeApp();
-            AppId = "1171153062936655";
-            AppSecret = "f6e06af58b57e006c3ef96f0fabd5e65";
+            // No need for an app secret in an implicit grant flow
+            // AppSecret = "f6e06af58b57e006c3ef96f0fabd5e65";
             Parameters = new ExpandoObject();
             Parameters.type = "user_agent";
             Parameters.client_id = "1171153062936655";
-            Parameters.client_secret = "f6e06af58b57e006c3ef96f0fabd5e65";
             Parameters.redirect_uri = "https://erictestappwebpage.wordpress.com/";
             Parameters.grant_type = "client_credentials";
             Parameters.scope = "manage_pages,offline_access,publish_actions";
